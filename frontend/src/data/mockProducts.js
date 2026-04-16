@@ -1,4 +1,4 @@
-// Product data for shah.knits - CORRECTED mapping from PDF
+// Product data for shah.knits - CORRECTLY matched from PDF layout
 
 export const productCategories = [
   {
@@ -24,13 +24,13 @@ export const productCategories = [
 ];
 
 export const products = [
-  // Page 1 - Claw Clips (images in order: _2, _3, _4)
+  // PDF PAGE 1 - Product positions: TOP, MIDDLE, BOTTOM
   {
     id: 1,
     name: 'Rosy Charm Claw Clip',
     price: 125,
     category: 'claw-clips',
-    image: '/products/product_img_p1_2.jpeg',
+    image: '/products/product_img_p1_2.jpeg',  // TOP position
     description: 'Red rose-shaped crochet claw clip'
   },
   {
@@ -38,7 +38,7 @@ export const products = [
     name: 'Sunflower Claw Clip',
     price: 145,
     category: 'claw-clips',
-    image: '/products/product_img_p1_3.jpeg',
+    image: '/products/product_img_p1_3.jpeg',  // MIDDLE position
     description: 'Yellow and brown sunflower crochet clip'
   },
   {
@@ -46,17 +46,17 @@ export const products = [
     name: 'Beige Claw Clip',
     price: 155,
     category: 'claw-clips',
-    image: '/products/product_img_p1_4.jpeg',
+    image: '/products/product_img_p1_4.jpeg',  // BOTTOM position
     description: 'Textured woven beige crochet clip'
   },
   
-  // Page 2 - Hair Clips (images in order: _1, _2, _3)
+  // PDF PAGE 2 - Product positions: TOP, MIDDLE, BOTTOM
   {
     id: 4,
     name: 'Cherry Bow Clip',
     price: 175,
     category: 'hair-clips',
-    image: '/products/product_img_p2_1.jpeg',
+    image: '/products/product_img_p2_1.jpeg',  // TOP position
     description: 'Bright red textured bow clip'
   },
   {
@@ -64,7 +64,7 @@ export const products = [
     name: 'Daisy Claw Clip',
     price: 145,
     category: 'claw-clips',
-    image: '/products/product_img_p2_2.jpeg',
+    image: '/products/product_img_p2_2.jpeg',  // MIDDLE position
     description: 'White and purple daisy crochet clip'
   },
   {
@@ -72,17 +72,17 @@ export const products = [
     name: 'Cocoa Claw Clip',
     price: 195,
     category: 'claw-clips',
-    image: '/products/product_img_p2_3.jpeg',
+    image: '/products/product_img_p2_3.jpeg',  // BOTTOM position
     description: 'Brown textured flower crochet clip'
   },
   
-  // Page 3 - Hair Clips (images in order: _2, _3, _4)
+  // PDF PAGE 3 - Product positions: TOP, MIDDLE, BOTTOM
   {
     id: 7,
     name: 'Tulip Clutch Clip',
     price: 190,
     category: 'hair-clips',
-    image: '/products/product_img_p3_2.jpeg',
+    image: '/products/product_img_p3_2.jpeg',  // TOP position
     description: 'Pink tulip with green leaves clip'
   },
   {
@@ -90,7 +90,7 @@ export const products = [
     name: 'Daisy Pinteresty Clip',
     price: 230,
     category: 'hair-clips',
-    image: '/products/product_img_p3_3.jpeg',
+    image: '/products/product_img_p3_3.jpeg',  // MIDDLE position
     description: 'White daisy cluster with pearl beads'
   },
   {
@@ -98,17 +98,17 @@ export const products = [
     name: 'Sunflower Clutch Clip',
     price: 190,
     category: 'hair-clips',
-    image: '/products/product_img_p3_4.jpeg',
+    image: '/products/product_img_p3_4.jpeg',  // BOTTOM position
     description: 'Yellow sunflower crochet clip'
   },
   
-  // Page 4 - Keychains (images in order: _2, _3, _4)
+  // PDF PAGE 4 - Product positions: TOP, MIDDLE, BOTTOM
   {
     id: 10,
     name: 'Cookie Keychain',
     price: 150,
     category: 'keychains',
-    image: '/products/product_img_p4_2.jpeg',
+    image: '/products/product_img_p4_2.jpeg',  // TOP position
     description: 'Round textured cookie-style keychain'
   },
   {
@@ -116,7 +116,7 @@ export const products = [
     name: 'Tulip Keychain',
     price: 200,
     category: 'keychains',
-    image: '/products/product_img_p4_3.jpeg',
+    image: '/products/product_img_p4_3.jpeg',  // MIDDLE position
     description: 'Pink tulip flower with green leaves keychain'
   },
   {
@@ -124,17 +124,17 @@ export const products = [
     name: 'Daisy Keychain',
     price: 150,
     category: 'keychains',
-    image: '/products/product_img_p4_4.jpeg',
+    image: '/products/product_img_p4_4.jpeg',  // BOTTOM position
     description: 'White and yellow daisy keychain'
   },
   
-  // Page 5 - Accessories (images: _2 for airpods, _3 and _4 for daisy clips)
+  // PDF PAGE 5 - Three images at top (Airpods), then one below (Daisy Clutch)
   {
     id: 13,
     name: 'Floral Airpods Pouch',
     price: 220,
     category: 'accessories',
-    image: '/products/product_img_p5_2.jpeg',
+    image: '/products/product_img_p5_2.jpeg',  // One of the 3 top images
     description: 'Floral charm pouch - multiple colors available'
   },
   {
@@ -142,17 +142,17 @@ export const products = [
     name: 'Daisy Clutch Clip',
     price: 230,
     category: 'hair-clips',
-    image: '/products/product_img_p5_3.jpeg',
+    image: '/products/product_img_p5_3.jpeg',  // Below the airpods section
     description: 'Red and pink flower cluster clip'
   },
   
-  // Page 6 - Hair Accessories (images: _3 for floral, _2 for angry, _4 for gajra)
+  // PDF PAGE 6 - Product positions: TOP, MIDDLE, BOTTOM
   {
     id: 15,
     name: 'Floral Clip',
     price: 95,
     category: 'hair-clips',
-    image: '/products/product_img_p6_3.jpeg',
+    image: '/products/product_img_p6_3.jpeg',  // TOP position
     description: 'Small white flower with yellow center'
   },
   {
@@ -160,7 +160,7 @@ export const products = [
     name: 'Cute Angry Clip',
     price: 155,
     category: 'hair-clips',
-    image: '/products/product_img_p6_2.png',
+    image: '/products/product_img_p6_2.png',  // MIDDLE position
     description: 'Red star-shaped clip'
   },
   {
@@ -168,17 +168,17 @@ export const products = [
     name: 'Forever Gajra',
     price: 380,
     category: 'accessories',
-    image: '/products/product_img_p6_4.jpeg',
+    image: '/products/product_img_p6_4.jpeg',  // BOTTOM position
     description: 'Traditional white flower gajra garland'
   },
   
-  // Page 7 - Special Items (images: _2, _3, _4)
+  // PDF PAGE 7 - Product positions: TOP, MIDDLE, BOTTOM
   {
     id: 18,
     name: 'Enchanted Lavender Whispers',
     price: 699,
     category: 'accessories',
-    image: '/products/product_img_p7_2.jpeg',
+    image: '/products/product_img_p7_2.jpeg',  // TOP position
     description: 'Lavender and purple flower bouquet'
   },
   {
@@ -186,7 +186,7 @@ export const products = [
     name: 'Loop Love Bag',
     price: 699,
     category: 'accessories',
-    image: '/products/product_img_p7_3.jpeg',
+    image: '/products/product_img_p7_3.jpeg',  // MIDDLE position
     description: 'Pink crochet handbag with heart pattern'
   },
   {
@@ -194,7 +194,7 @@ export const products = [
     name: 'Skyview Blossom',
     price: 499,
     category: 'accessories',
-    image: '/products/product_img_p7_4.jpeg',
+    image: '/products/product_img_p7_4.jpeg',  // BOTTOM position
     description: 'Pink flower in brown pot - decorative'
   }
 ];
