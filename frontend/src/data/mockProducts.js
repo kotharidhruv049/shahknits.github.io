@@ -1,4 +1,4 @@
-// Product data for shah.knits - 20 products from PDF catalog with curated images
+// Product data for shah.knits - 20 products from PDF with extracted images
 
 export const productCategories = [
   {
@@ -24,13 +24,13 @@ export const productCategories = [
 ];
 
 export const products = [
-  // Claw Clips - Page 1 of PDF
+  // Page 1 - Claw Clips
   {
     id: 1,
     name: 'Rosy Charm Claw Clip',
     price: 125,
     category: 'claw-clips',
-    image: 'https://images.unsplash.com/photo-1716400128984-3681f2005d22?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxjcm9jaGV0JTIwaGFpciUyMGNsaXAlMjBmbG93ZXIlMjBoYW5kbWFkZXxlbnwwfHx8fDE3NzYzNjczMzV8MA&ixlib=rb-4.1.0&q=85',
+    image: '/products/product_img_p1_2.jpeg',
     description: 'Red rose-shaped crochet claw clip'
   },
   {
@@ -38,7 +38,7 @@ export const products = [
     name: 'Sunflower Claw Clip',
     price: 145,
     category: 'claw-clips',
-    image: 'https://images.unsplash.com/photo-1753366556699-4be495e5bdd6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwyfHxjcm9jaGV0JTIwa2V5Y2hhaW4lMjBmbG93ZXIlMjBjdXRlfGVufDB8fHx8MTc3NjM2NzM0NXww&ixlib=rb-4.1.0&q=85',
+    image: '/products/product_img_p1_3.jpeg',
     description: 'Yellow and brown sunflower crochet clip'
   },
   {
@@ -46,17 +46,17 @@ export const products = [
     name: 'Beige Claw Clip',
     price: 155,
     category: 'claw-clips',
-    image: 'https://images.unsplash.com/photo-1664794507941-ae1e664ed3d6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHw0fHxjcm9jaGV0JTIwaGFpciUyMGNsaXAlMjBmbG93ZXIlMjBoYW5kbWFkZXxlbnwwfHx8fDE3NzYzNjczMzV8MA&ixlib=rb-4.1.0&q=85',
+    image: '/products/product_img_p1_4.jpeg',
     description: 'Textured woven beige crochet clip'
   },
   
-  // Hair Clips - Page 2 of PDF
+  // Page 2 - Hair Clips
   {
     id: 4,
     name: 'Cherry Bow Clip',
     price: 175,
     category: 'hair-clips',
-    image: 'https://images.unsplash.com/photo-1716400128984-3681f2005d22?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxjcm9jaGV0JTIwaGFpciUyMGNsaXAlMjBmbG93ZXIlMjBoYW5kbWFkZXxlbnwwfHx8fDE3NzYzNjczMzV8MA&ixlib=rb-4.1.0&q=85',
+    image: '/products/product_img_p2_1.jpeg',
     description: 'Bright red textured bow clip'
   },
   {
@@ -64,7 +64,7 @@ export const products = [
     name: 'Daisy Claw Clip',
     price: 145,
     category: 'claw-clips',
-    image: 'https://images.unsplash.com/photo-1700171518313-5dd219beaaa6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHw0fHxjcm9jaGV0JTIwa2V5Y2hhaW4lMjBmbG93ZXIlMjBjdXRlfGVufDB8fHx8MTc3NjM2NzM0NXww&ixlib=rb-4.1.0&q=85',
+    image: '/products/product_img_p2_2.jpeg',
     description: 'Pale purple daisy crochet clip'
   },
   {
@@ -72,17 +72,17 @@ export const products = [
     name: 'Cocoa Claw Clip',
     price: 195,
     category: 'claw-clips',
-    image: 'https://images.unsplash.com/photo-1664794507941-ae1e664ed3d6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHw0fHxjcm9jaGV0JTIwaGFpciUyMGNsaXAlMjBmbG93ZXIlMjBoYW5kbWFkZXxlbnwwfHx8fDE3NzYzNjczMzV8MA&ixlib=rb-4.1.0&q=85',
+    image: '/products/product_img_p2_3.jpeg',
     description: 'Brown textured flower crochet clip'
   },
   
-  // Hair Clips - Page 3 of PDF
+  // Page 3 - Hair Clips
   {
     id: 7,
     name: 'Tulip Clutch Clip',
     price: 190,
     category: 'hair-clips',
-    image: 'https://images.unsplash.com/photo-1716400128984-3681f2005d22?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxjcm9jaGV0JTIwaGFpciUyMGNsaXAlMjBmbG93ZXIlMjBoYW5kbWFkZXxlbnwwfHx8fDE3NzYzNjczMzV8MA&ixlib=rb-4.1.0&q=85',
+    image: '/products/product_img_p3_2.jpeg',
     description: 'Pink tulip with green leaves clip'
   },
   {
@@ -90,7 +90,7 @@ export const products = [
     name: 'Daisy Pinteresty Clip',
     price: 230,
     category: 'hair-clips',
-    image: 'https://images.unsplash.com/photo-1770027705695-ac43307fd523?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwzfHxjcm9jaGV0JTIwaGFpciUyMGNsaXAlMjBmbG93ZXIlMjBoYW5kbWFkZXxlbnwwfHx8fDE3NzYzNjczMzV8MA&ixlib=rb-4.1.0&q=85',
+    image: '/products/product_img_p3_3.jpeg',
     description: 'White daisy cluster with yellow centers'
   },
   {
@@ -98,17 +98,17 @@ export const products = [
     name: 'Sunflower Clutch Clip',
     price: 190,
     category: 'hair-clips',
-    image: 'https://images.unsplash.com/photo-1753366556699-4be495e5bdd6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwyfHxjcm9jaGV0JTIwa2V5Y2hhaW4lMjBmbG93ZXIlMjBjdXRlfGVufDB8fHx8MTc3NjM2NzM0NXww&ixlib=rb-4.1.0&q=85',
+    image: '/products/product_img_p3_4.jpeg',
     description: 'Yellow sunflower crochet clip'
   },
   
-  // Keychains - Page 4 of PDF
+  // Page 4 - Keychains
   {
     id: 10,
     name: 'Cookie Keychain',
     price: 150,
     category: 'keychains',
-    image: 'https://images.unsplash.com/photo-1700171394718-2457b1190444?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwzfHxjcm9jaGV0JTIwa2V5Y2hhaW4lMjBmbG93ZXIlMjBjdXRlfGVufDB8fHx8MTc3NjM2NzM0NXww&ixlib=rb-4.1.0&q=85',
+    image: '/products/product_img_p4_2.jpeg',
     description: 'Round textured cookie-style keychain'
   },
   {
@@ -116,7 +116,7 @@ export const products = [
     name: 'Tulip Keychain',
     price: 200,
     category: 'keychains',
-    image: 'https://images.unsplash.com/photo-1716400128984-3681f2005d22?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwxfHxjcm9jaGV0JTIwa2V5Y2hhaW4lMjBmbG93ZXIlMjBjdXRlfGVufDB8fHx8MTc3NjM2NzM0NXww&ixlib=rb-4.1.0&q=85',
+    image: '/products/product_img_p4_3.jpeg',
     description: 'Red tulip with tassel keychain'
   },
   {
@@ -124,17 +124,17 @@ export const products = [
     name: 'Daisy Keychain',
     price: 150,
     category: 'keychains',
-    image: 'https://images.unsplash.com/photo-1700171518313-5dd219beaaa6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHw0fHxjcm9jaGV0JTIwa2V5Y2hhaW4lMjBmbG93ZXIlMjBjdXRlfGVufDB8fHx8MTc3NjM2NzM0NXww&ixlib=rb-4.1.0&q=85',
+    image: '/products/product_img_p4_4.jpeg',
     description: 'White and yellow daisy keychain'
   },
   
-  // Accessories - Page 5 of PDF
+  // Page 5 - Accessories
   {
     id: 13,
     name: 'Floral Airpods Pouch',
     price: 220,
     category: 'accessories',
-    image: 'https://images.unsplash.com/photo-1716400128984-3681f2005d22?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxjcm9jaGV0JTIwaGFpciUyMGNsaXAlMjBmbG93ZXIlMjBoYW5kbWFkZXxlbnwwfHx8fDE3NzYzNjczMzV8MA&ixlib=rb-4.1.0&q=85',
+    image: '/products/product_img_p5_2.jpeg',
     description: 'Floral charm pouch - multiple colors'
   },
   {
@@ -142,17 +142,17 @@ export const products = [
     name: 'Daisy Clutch Clip',
     price: 230,
     category: 'hair-clips',
-    image: 'https://images.unsplash.com/photo-1770027705695-ac43307fd523?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwzfHxjcm9jaGV0JTIwaGFpciUyMGNsaXAlMjBmbG93ZXIlMjBoYW5kbWFkZXxlbnwwfHx8fDE3NzYzNjczMzV8MA&ixlib=rb-4.1.0&q=85',
+    image: '/products/product_img_p5_6.jpeg',
     description: 'Pink and red flower cluster clip'
   },
   
-  // Hair Accessories - Page 6 of PDF
+  // Page 6 - Hair Accessories
   {
     id: 15,
     name: 'Floral Clip',
     price: 95,
     category: 'hair-clips',
-    image: 'https://images.unsplash.com/photo-1754164681038-a33d4cbc3b12?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwyfHxjcm9jaGV0JTIwaGFpciUyMGNsaXAlMjBmbG93ZXIlMjBoYW5kbWFkZXxlbnwwfHx8fDE3NzYzNjczMzV8MA&ixlib=rb-4.1.0&q=85',
+    image: '/products/product_img_p6_3.jpeg',
     description: 'Delicate white flower with yellow center'
   },
   {
@@ -160,7 +160,7 @@ export const products = [
     name: 'Cute Angry Clip',
     price: 155,
     category: 'hair-clips',
-    image: 'https://images.unsplash.com/photo-1716400128984-3681f2005d22?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxjcm9jaGV0JTIwaGFpciUyMGNsaXAlMjBmbG93ZXIlMjBoYW5kbWFkZXxlbnwwfHx8fDE3NzYzNjczMzV8MA&ixlib=rb-4.1.0&q=85',
+    image: '/products/product_img_p6_2.png',
     description: 'Small red star-shaped clip'
   },
   {
@@ -168,17 +168,17 @@ export const products = [
     name: 'Forever Gajra',
     price: 380,
     category: 'accessories',
-    image: 'https://images.unsplash.com/photo-1664794507941-ae1e664ed3d6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHw0fHxjcm9jaGV0JTIwaGFpciUyMGNsaXAlMjBmbG93ZXIlMjBoYW5kbWFkZXxlbnwwfHx8fDE3NzYzNjczMzV8MA&ixlib=rb-4.1.0&q=85',
+    image: '/products/product_img_p6_4.jpeg',
     description: 'Traditional white flower gajra'
   },
   
-  // Special Items - Page 7 of PDF
+  // Page 7 - Special Items
   {
     id: 18,
     name: 'Enchanted Lavender Whispers',
     price: 699,
     category: 'accessories',
-    image: 'https://images.unsplash.com/photo-1770027705695-ac43307fd523?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwzfHxjcm9jaGV0JTIwaGFpciUyMGNsaXAlMjBmbG93ZXIlMjBoYW5kbWFkZXxlbnwwfHx8fDE3NzYzNjczMzV8MA&ixlib=rb-4.1.0&q=85',
+    image: '/products/product_img_p7_2.jpeg',
     description: 'Lavender and purple flower bouquet'
   },
   {
@@ -186,7 +186,7 @@ export const products = [
     name: 'Loop Love Bag',
     price: 699,
     category: 'accessories',
-    image: 'https://images.unsplash.com/photo-1770637266187-60cf9d509593?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxNzV8MHwxfHNlYXJjaHwxfHxjcm9jaGV0JTIwYmFnJTIwcGluayUyMGhhbmRtYWRlfGVufDB8fHx8MTc3NjM2NzM0NXww&ixlib=rb-4.1.0&q=85',
+    image: '/products/product_img_p7_3.jpeg',
     description: 'Pink crochet handbag with flower motifs'
   },
   {
@@ -194,7 +194,7 @@ export const products = [
     name: 'Skyview Blossom',
     price: 499,
     category: 'accessories',
-    image: 'https://images.unsplash.com/photo-1753366556699-4be495e5bdd6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwyfHxjcm9jaGV0JTIwa2V5Y2hhaW4lMjBmbG93ZXIlMjBjdXRlfGVufDB8fHx8MTc3NjM2NzM0NXww&ixlib=rb-4.1.0&q=85',
+    image: '/products/product_img_p7_4.jpeg',
     description: 'Pink flower in woven pot - decorative'
   }
 ];

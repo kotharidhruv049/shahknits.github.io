@@ -28,12 +28,18 @@ const Home = () => {
             <h1 className="text-2xl font-bold text-gray-800 tracking-tight">shah.knits</h1>
           </div>
           <nav className="flex items-center gap-6">
-            <a href="#products" className="text-gray-700 hover:text-pink-500 transition-colors">
+            <button 
+              onClick={() => document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })}
+              className="text-gray-700 hover:text-pink-500 transition-colors cursor-pointer"
+            >
               Products
-            </a>
-            <a href="#contact" className="text-gray-700 hover:text-pink-500 transition-colors">
+            </button>
+            <button 
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              className="text-gray-700 hover:text-pink-500 transition-colors cursor-pointer"
+            >
               Contact
-            </a>
+            </button>
             <Button 
               variant="outline" 
               size="sm" 
@@ -276,8 +282,22 @@ const Home = () => {
             <div>
               <h5 className="font-semibold mb-4">Quick Links</h5>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#products" className="hover:text-pink-400 transition-colors">Products</a></li>
-                <li><a href="#contact" className="hover:text-pink-400 transition-colors">Contact</a></li>
+                <li>
+                  <button 
+                    onClick={() => document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })}
+                    className="hover:text-pink-400 transition-colors cursor-pointer"
+                  >
+                    Products
+                  </button>
+                </li>
+                <li>
+                  <button 
+                    onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                    className="hover:text-pink-400 transition-colors cursor-pointer"
+                  >
+                    Contact
+                  </button>
+                </li>
               </ul>
             </div>
             <div>
