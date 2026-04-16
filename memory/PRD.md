@@ -25,17 +25,18 @@ Build a simple landing page for crochet business "shah.knits" with:
 - ✅ Hero section with pastel yarn balls image and brand messaging
 - ✅ Sticky navigation header with Instagram follow button
 - ✅ Product catalog with 14 handcrafted items organized in 3 categories:
-  - Hair Clips (7 items: Floral Clip, Cute Angry Clip, Cherry Bow, Tulip Clutch, Daisy Pinteresty, Daisy Clutch, Sunflower Clutch)
-  - Claw Clips (5 items: Rosy Charm, Daisy, Sunflower, Beige, Cocoa)
-  - Accessories (2 items: Floral Airpods Pouch, Forever Gajra)
+  - Hair Clips (6 items: Floral Clip ₹95, Cute Angry Clip ₹155, Tulip Clutch Clip ₹190, Daisy Pinteresty Clip ₹230, Sunflower Clutch Clip ₹190, Cherry Bow Clip ₹175)
+  - Claw Clips (5 items: Daisy ₹145, Cocoa ₹195, Rosy Charm ₹125, Sunflower ₹145, Beige ₹155)
+  - Accessories (3 items: Floral Airpods Pouch ₹220, Daisy Clutch Clip ₹230, Forever Gajra ₹380)
 - ✅ Category tabs with filtering functionality
-- ✅ Product cards with hover effects and "Order Now" CTAs linking to Instagram
+- ✅ Product cards showing name, description, and price (NO order buttons as per user request)
 - ✅ Instagram CTA section with pink gradient background and image carousel
 - ✅ Contact section with Instagram DM and Phone call options
 - ✅ Footer with brand information and social links
 - ✅ Responsive design with mobile optimization
 - ✅ Soft pastel color palette implementation
 - ✅ Custom fonts (Playfair Display + Inter)
+- ✅ Images mapped from uploaded product catalog sheets (5 catalog images containing 14 products)
 
 ### Design Features Implemented
 - Handmade & artisanal aesthetic with serif headings

@@ -146,15 +146,8 @@ const Home = () => {
                     <CardContent className="p-6 space-y-3">
                       <h4 className="text-xl font-semibold text-gray-900">{product.name}</h4>
                       <p className="text-sm text-gray-600">{product.description}</p>
-                      <div className="flex items-center justify-between pt-2">
+                      <div className="pt-2">
                         <span className="text-2xl font-bold text-pink-600">₹{product.price}/-</span>
-                        <Button 
-                          size="sm"
-                          className="bg-pink-500 hover:bg-pink-600 text-white"
-                          onClick={() => window.open('https://instagram.com/shah.knits', '_blank')}
-                        >
-                          Order Now
-                        </Button>
                       </div>
                     </CardContent>
                   </Card>
