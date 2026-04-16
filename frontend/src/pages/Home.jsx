@@ -8,16 +8,16 @@ import {
   CarouselContent,
   CarouselItem,
   CarouselNext,
-  CarouselPrevious,
-} from '../components/ui/carousel';
+  CarouselPrevious } from
+'../components/ui/carousel';
 import { productCategories, getProductsByCategory, getAllProducts } from '../data/mockProducts';
 
 const Home = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
 
-  const displayProducts = selectedCategory === 'all' 
-    ? getAllProducts() 
-    : getProductsByCategory(selectedCategory);
+  const displayProducts = selectedCategory === 'all' ?
+  getAllProducts() :
+  getProductsByCategory(selectedCategory);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-pink-50 via-lavender-50 to-cream-50">
@@ -28,24 +28,24 @@ const Home = () => {
             <h1 className="text-2xl font-bold text-gray-800 tracking-tight">shah.knits</h1>
           </div>
           <nav className="flex items-center gap-6">
-            <button 
+            <button
               onClick={() => document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })}
-              className="text-gray-700 hover:text-pink-500 transition-colors cursor-pointer"
-            >
+              className="text-gray-700 hover:text-pink-500 transition-colors cursor-pointer">
+
               Products
             </button>
-            <button 
+            <button
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="text-gray-700 hover:text-pink-500 transition-colors cursor-pointer"
-            >
+              className="text-gray-700 hover:text-pink-500 transition-colors cursor-pointer">
+
               Contact
             </button>
-            <Button 
-              variant="outline" 
-              size="sm" 
+            <Button
+              variant="outline"
+              size="sm"
               className="border-pink-300 text-pink-600 hover:bg-pink-50"
-              onClick={() => window.open('https://instagram.com/shah.knits', '_blank')}
-            >
+              onClick={() => window.open('https://instagram.com/shah.knits', '_blank')}>
+
               <Instagram className="w-4 h-4 mr-2" />
               Follow Us
             </Button>
@@ -73,19 +73,19 @@ const Home = () => {
                 clips, pouches, and accessories.
               </p>
               <div className="flex gap-4 pt-4">
-                <Button 
-                  size="lg" 
+                <Button
+                  size="lg"
                   className="bg-pink-500 hover:bg-pink-600 text-white"
-                  onClick={() => document.getElementById('products').scrollIntoView({ behavior: 'smooth' })}
-                >
+                  onClick={() => document.getElementById('products').scrollIntoView({ behavior: 'smooth' })}>
+
                   Shop Collection
                 </Button>
-                <Button 
-                  size="lg" 
+                <Button
+                  size="lg"
                   variant="outline"
                   className="border-pink-300 text-pink-600 hover:bg-pink-50"
-                  onClick={() => window.open('https://instagram.com/shah.knits', '_blank')}
-                >
+                  onClick={() => window.open('https://instagram.com/shah.knits', '_blank')}>
+
                   <Instagram className="w-5 h-5 mr-2" />
                   View Gallery
                 </Button>
@@ -93,11 +93,11 @@ const Home = () => {
             </div>
             <div className="relative">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-                <img 
+                <img
                   src="https://images.unsplash.com/photo-1649680603092-b0edd0e5e2f3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHw0fHx5YXJuJTIwYmFsbHMlMjBwYXN0ZWx8ZW58MHx8fHwxNzc2MzY2MDA1fDA&ixlib=rb-4.1.0&q=85"
                   alt="Pastel yarn balls"
-                  className="w-full h-full object-cover"
-                />
+                  className="w-full h-full object-cover" />
+
               </div>
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-lavender-200 rounded-full blur-3xl opacity-60"></div>
               <div className="absolute -top-6 -left-6 w-32 h-32 bg-pink-200 rounded-full blur-3xl opacity-60"></div>
@@ -123,41 +123,41 @@ const Home = () => {
               <TabsTrigger value="all" className="data-[state=active]:bg-pink-500 data-[state=active]:text-white">
                 All
               </TabsTrigger>
-              {productCategories.map(category => (
-                <TabsTrigger 
-                  key={category.id} 
-                  value={category.id}
-                  className="data-[state=active]:bg-pink-500 data-[state=active]:text-white"
-                >
+              {productCategories.map((category) =>
+              <TabsTrigger
+                key={category.id}
+                value={category.id}
+                className="data-[state=active]:bg-pink-500 data-[state=active]:text-white">
+
                   {category.name}
                 </TabsTrigger>
-              ))}
+              )}
             </TabsList>
 
             {/* Products Grid */}
             <TabsContent value={selectedCategory} className="mt-8">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {displayProducts.map(product => (
-                  <Card 
-                    key={product.id} 
-                    className="group overflow-hidden border-pink-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-                  >
+                {displayProducts.map((product) =>
+                <Card
+                  key={product.id}
+                  className="group overflow-hidden border-pink-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+
                     <div className="relative overflow-hidden bg-gray-50 aspect-square">
-                      <img 
-                        src={product.image}
-                        alt={product.name}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                      />
+                      <img
+                      src={product.image}
+                      alt={product.name}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+
                     </div>
                     <CardContent className="p-6 space-y-3">
-                      <h4 className="text-xl font-semibold text-gray-900">{product.name}</h4>
+                      <h4 className="Cookie Keychain">{product.name}</h4>
                       <p className="text-sm text-gray-600">{product.description}</p>
                       <div className="pt-2">
                         <span className="text-2xl font-bold text-pink-600">₹{product.price}/-</span>
                       </div>
                     </CardContent>
                   </Card>
-                ))}
+                )}
               </div>
             </TabsContent>
           </Tabs>
@@ -175,12 +175,12 @@ const Home = () => {
               and exclusive designs. Join our growing community!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 variant="secondary"
                 className="bg-white text-pink-600 hover:bg-pink-50 font-semibold"
-                onClick={() => window.open('https://instagram.com/shah.knits', '_blank')}
-              >
+                onClick={() => window.open('https://instagram.com/shah.knits', '_blank')}>
+
                 <Instagram className="w-5 h-5 mr-2" />
                 @shah.knits
               </Button>
@@ -191,29 +191,29 @@ const Home = () => {
                 <CarouselContent>
                   <CarouselItem className="md:basis-1/3">
                     <div className="p-2">
-                      <img 
+                      <img
                         src="https://images.unsplash.com/photo-1728393287642-13bee7126ae8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTJ8MHwxfHNlYXJjaHwxfHxwYXN0ZWwlMjBjcm9jaGV0fGVufDB8fHx8MTc3NjM2NTk5OXww&ixlib=rb-4.1.0&q=85"
                         alt="Crochet work"
-                        className="rounded-lg shadow-lg w-full aspect-square object-cover"
-                      />
+                        className="rounded-lg shadow-lg w-full aspect-square object-cover" />
+
                     </div>
                   </CarouselItem>
                   <CarouselItem className="md:basis-1/3">
                     <div className="p-2">
-                      <img 
+                      <img
                         src="https://images.unsplash.com/photo-1649680579917-4cc253d7761b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHwxfHx5YXJuJTIwYmFsbHMlMjBwYXN0ZWx8ZW58MHx8fHwxNzc2MzY2MDA1fDA&ixlib=rb-4.1.0&q=85"
                         alt="Pastel yarns"
-                        className="rounded-lg shadow-lg w-full aspect-square object-cover"
-                      />
+                        className="rounded-lg shadow-lg w-full aspect-square object-cover" />
+
                     </div>
                   </CarouselItem>
                   <CarouselItem className="md:basis-1/3">
                     <div className="p-2">
-                      <img 
+                      <img
                         src="https://images.unsplash.com/photo-1649680603092-b0edd0e5e2f3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHw0fHx5YXJuJTIwYmFsbHMlMjBwYXN0ZWx8ZW58MHx8fHwxNzc2MzY2MDA1fDA&ixlib=rb-4.1.0&q=85"
                         alt="Colorful yarns"
-                        className="rounded-lg shadow-lg w-full aspect-square object-cover"
-                      />
+                        className="rounded-lg shadow-lg w-full aspect-square object-cover" />
+
                     </div>
                   </CarouselItem>
                 </CarouselContent>
@@ -241,10 +241,10 @@ const Home = () => {
                   </div>
                   <h4 className="text-xl font-semibold text-gray-900">Instagram</h4>
                   <p className="text-gray-600">DM us for orders and inquiries</p>
-                  <Button 
+                  <Button
                     className="bg-pink-500 hover:bg-pink-600 text-white w-full"
-                    onClick={() => window.open('https://instagram.com/shah.knits', '_blank')}
-                  >
+                    onClick={() => window.open('https://instagram.com/shah.knits', '_blank')}>
+
                     Message Us
                   </Button>
                 </CardContent>
@@ -256,10 +256,10 @@ const Home = () => {
                   </div>
                   <h4 className="text-xl font-semibold text-gray-900">Phone</h4>
                   <p className="text-gray-600">Call us for quick inquiries</p>
-                  <Button 
+                  <Button
                     className="bg-pink-500 hover:bg-pink-600 text-white w-full"
-                    onClick={() => window.location.href = 'tel:9160188322'}
-                  >
+                    onClick={() => window.location.href = 'tel:9160188322'}>
+
                     9160188322
                   </Button>
                 </CardContent>
@@ -283,18 +283,18 @@ const Home = () => {
               <h5 className="font-semibold mb-4">Quick Links</h5>
               <ul className="space-y-2 text-gray-400">
                 <li>
-                  <button 
+                  <button
                     onClick={() => document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })}
-                    className="hover:text-pink-400 transition-colors cursor-pointer"
-                  >
+                    className="hover:text-pink-400 transition-colors cursor-pointer">
+
                     Products
                   </button>
                 </li>
                 <li>
-                  <button 
+                  <button
                     onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                    className="hover:text-pink-400 transition-colors cursor-pointer"
-                  >
+                    className="hover:text-pink-400 transition-colors cursor-pointer">
+
                     Contact
                   </button>
                 </li>
@@ -303,12 +303,12 @@ const Home = () => {
             <div>
               <h5 className="font-semibold mb-4">Connect</h5>
               <div className="flex gap-4">
-                <Button 
-                  variant="outline" 
+                <Button
+                  variant="outline"
                   size="icon"
                   className="border-gray-700 hover:bg-pink-500 hover:border-pink-500"
-                  onClick={() => window.open('https://instagram.com/shah.knits', '_blank')}
-                >
+                  onClick={() => window.open('https://instagram.com/shah.knits', '_blank')}>
+
                   <Instagram className="w-5 h-5" />
                 </Button>
               </div>
@@ -319,8 +319,8 @@ const Home = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>);
+
 };
 
 export default Home;
