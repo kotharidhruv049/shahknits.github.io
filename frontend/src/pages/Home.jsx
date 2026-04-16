@@ -8,16 +8,11 @@ import {
   CarouselContent,
   CarouselItem,
   CarouselNext,
-  CarouselPrevious } from
-'../components/ui/carousel';
-import { productCategories, getProductsByCategory, getAllProducts } from '../data/mockProducts';
+  CarouselPrevious,
+} from '../components/ui/carousel';
 
 const Home = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
-
-  const displayProducts = selectedCategory === 'all' ?
-  getAllProducts() :
-  getProductsByCategory(selectedCategory);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-pink-50 via-lavender-50 to-cream-50">
@@ -28,24 +23,24 @@ const Home = () => {
             <h1 className="text-2xl font-bold text-gray-800 tracking-tight">shah.knits</h1>
           </div>
           <nav className="flex items-center gap-6">
-            <button
+            <button 
               onClick={() => document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })}
-              className="text-gray-700 hover:text-pink-500 transition-colors cursor-pointer">
-
+              className="text-gray-700 hover:text-pink-500 transition-colors cursor-pointer"
+            >
               Products
             </button>
-            <button
+            <button 
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="text-gray-700 hover:text-pink-500 transition-colors cursor-pointer">
-
+              className="text-gray-700 hover:text-pink-500 transition-colors cursor-pointer"
+            >
               Contact
             </button>
-            <Button
-              variant="outline"
-              size="sm"
+            <Button 
+              variant="outline" 
+              size="sm" 
               className="border-pink-300 text-pink-600 hover:bg-pink-50"
-              onClick={() => window.open('https://instagram.com/shah.knits', '_blank')}>
-
+              onClick={() => window.open('https://instagram.com/shah.knits', '_blank')}
+            >
               <Instagram className="w-4 h-4 mr-2" />
               Follow Us
             </Button>
@@ -73,19 +68,19 @@ const Home = () => {
                 clips, pouches, and accessories.
               </p>
               <div className="flex gap-4 pt-4">
-                <Button
-                  size="lg"
+                <Button 
+                  size="lg" 
                   className="bg-pink-500 hover:bg-pink-600 text-white"
-                  onClick={() => document.getElementById('products').scrollIntoView({ behavior: 'smooth' })}>
-
+                  onClick={() => document.getElementById('products').scrollIntoView({ behavior: 'smooth' })}
+                >
                   Shop Collection
                 </Button>
-                <Button
-                  size="lg"
+                <Button 
+                  size="lg" 
                   variant="outline"
                   className="border-pink-300 text-pink-600 hover:bg-pink-50"
-                  onClick={() => window.open('https://instagram.com/shah.knits', '_blank')}>
-
+                  onClick={() => window.open('https://instagram.com/shah.knits', '_blank')}
+                >
                   <Instagram className="w-5 h-5 mr-2" />
                   View Gallery
                 </Button>
@@ -93,11 +88,11 @@ const Home = () => {
             </div>
             <div className="relative">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-                <img
+                <img 
                   src="https://images.unsplash.com/photo-1649680603092-b0edd0e5e2f3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHw0fHx5YXJuJTIwYmFsbHMlMjBwYXN0ZWx8ZW58MHx8fHwxNzc2MzY2MDA1fDA&ixlib=rb-4.1.0&q=85"
                   alt="Pastel yarn balls"
-                  className="w-full h-full object-cover" />
-
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-lavender-200 rounded-full blur-3xl opacity-60"></div>
               <div className="absolute -top-6 -left-6 w-32 h-32 bg-pink-200 rounded-full blur-3xl opacity-60"></div>
@@ -123,41 +118,328 @@ const Home = () => {
               <TabsTrigger value="all" className="data-[state=active]:bg-pink-500 data-[state=active]:text-white">
                 All
               </TabsTrigger>
-              {productCategories.map((category) =>
-              <TabsTrigger
-                key={category.id}
-                value={category.id}
-                className="data-[state=active]:bg-pink-500 data-[state=active]:text-white">
-
-                  {category.name}
-                </TabsTrigger>
-              )}
+              <TabsTrigger value="claw-clips" className="data-[state=active]:bg-pink-500 data-[state=active]:text-white">
+                Claw Clips
+              </TabsTrigger>
+              <TabsTrigger value="hair-clips" className="data-[state=active]:bg-pink-500 data-[state=active]:text-white">
+                Hair Clips
+              </TabsTrigger>
+              <TabsTrigger value="keychains" className="data-[state=active]:bg-pink-500 data-[state=active]:text-white">
+                Keychains
+              </TabsTrigger>
+              <TabsTrigger value="accessories" className="data-[state=active]:bg-pink-500 data-[state=active]:text-white">
+                Accessories
+              </TabsTrigger>
             </TabsList>
 
-            {/* Products Grid */}
-            <TabsContent value={selectedCategory} className="mt-8">
+            {/* All Products */}
+            <TabsContent value="all" className="mt-8">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {displayProducts.map((product) =>
-                <Card
-                  key={product.id}
-                  className="group overflow-hidden border-pink-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-
-                    <div className="relative overflow-hidden bg-gray-50 aspect-square">
-                      <img
-                      src={product.image}
-                      alt={product.name}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-
+                {/* Product 1 */}
+                <Card className="group overflow-hidden border-pink-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <div className="relative overflow-hidden bg-gray-50 aspect-square">
+                    <img src="/products/product_img_p1_2.jpeg" alt="Rosy Charm Claw Clip" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  </div>
+                  <CardContent className="p-6 space-y-3">
+                    <h4 className="text-xl font-semibold text-gray-900">Rosy Charm Claw Clip</h4>
+                    <p className="text-sm text-gray-600">Red rose-shaped crochet claw clip</p>
+                    <div className="pt-2">
+                      <span className="text-2xl font-bold text-pink-600">₹125/-</span>
                     </div>
-                    <CardContent className="p-6 space-y-3">
-                      <h4 className="Cookie Keychain">{product.name}</h4>
-                      <p className="text-sm text-gray-600">{product.description}</p>
-                      <div className="pt-2">
-                        <span className="text-2xl font-bold text-pink-600">₹{product.price}/-</span>
-                      </div>
-                    </CardContent>
-                  </Card>
-                )}
+                  </CardContent>
+                </Card>
+
+                {/* Product 2 */}
+                <Card className="group overflow-hidden border-pink-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <div className="relative overflow-hidden bg-gray-50 aspect-square">
+                    <img src="/products/product_img_p1_3.jpeg" alt="Sunflower Claw Clip" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  </div>
+                  <CardContent className="p-6 space-y-3">
+                    <h4 className="text-xl font-semibold text-gray-900">Sunflower Claw Clip</h4>
+                    <p className="text-sm text-gray-600">Yellow and brown sunflower crochet clip</p>
+                    <div className="pt-2">
+                      <span className="text-2xl font-bold text-pink-600">₹145/-</span>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Product 3 */}
+                <Card className="group overflow-hidden border-pink-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <div className="relative overflow-hidden bg-gray-50 aspect-square">
+                    <img src="/products/product_img_p1_4.jpeg" alt="Beige Claw Clip" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  </div>
+                  <CardContent className="p-6 space-y-3">
+                    <h4 className="text-xl font-semibold text-gray-900">Beige Claw Clip</h4>
+                    <p className="text-sm text-gray-600">Textured woven beige crochet clip</p>
+                    <div className="pt-2">
+                      <span className="text-2xl font-bold text-pink-600">₹155/-</span>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Product 4 */}
+                <Card className="group overflow-hidden border-pink-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <div className="relative overflow-hidden bg-gray-50 aspect-square">
+                    <img src="/products/product_img_p2_1.jpeg" alt="Cherry Bow Clip" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  </div>
+                  <CardContent className="p-6 space-y-3">
+                    <h4 className="text-xl font-semibold text-gray-900">Cherry Bow Clip</h4>
+                    <p className="text-sm text-gray-600">Bright red textured bow clip</p>
+                    <div className="pt-2">
+                      <span className="text-2xl font-bold text-pink-600">₹175/-</span>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Product 5 */}
+                <Card className="group overflow-hidden border-pink-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <div className="relative overflow-hidden bg-gray-50 aspect-square">
+                    <img src="/products/product_img_p2_2.jpeg" alt="Daisy Claw Clip" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  </div>
+                  <CardContent className="p-6 space-y-3">
+                    <h4 className="text-xl font-semibold text-gray-900">Daisy Claw Clip</h4>
+                    <p className="text-sm text-gray-600">White and purple daisy crochet clip</p>
+                    <div className="pt-2">
+                      <span className="text-2xl font-bold text-pink-600">₹145/-</span>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Product 6 */}
+                <Card className="group overflow-hidden border-pink-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <div className="relative overflow-hidden bg-gray-50 aspect-square">
+                    <img src="/products/product_img_p2_3.jpeg" alt="Cocoa Claw Clip" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  </div>
+                  <CardContent className="p-6 space-y-3">
+                    <h4 className="text-xl font-semibold text-gray-900">Cocoa Claw Clip</h4>
+                    <p className="text-sm text-gray-600">Brown textured flower crochet clip</p>
+                    <div className="pt-2">
+                      <span className="text-2xl font-bold text-pink-600">₹195/-</span>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Product 7 */}
+                <Card className="group overflow-hidden border-pink-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <div className="relative overflow-hidden bg-gray-50 aspect-square">
+                    <img src="/products/product_img_p3_2.jpeg" alt="Tulip Clutch Clip" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  </div>
+                  <CardContent className="p-6 space-y-3">
+                    <h4 className="text-xl font-semibold text-gray-900">Tulip Clutch Clip</h4>
+                    <p className="text-sm text-gray-600">Pink tulip with green leaves clip</p>
+                    <div className="pt-2">
+                      <span className="text-2xl font-bold text-pink-600">₹190/-</span>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Product 8 */}
+                <Card className="group overflow-hidden border-pink-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <div className="relative overflow-hidden bg-gray-50 aspect-square">
+                    <img src="/products/product_img_p3_3.jpeg" alt="Daisy Pinteresty Clip" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  </div>
+                  <CardContent className="p-6 space-y-3">
+                    <h4 className="text-xl font-semibold text-gray-900">Daisy Pinteresty Clip</h4>
+                    <p className="text-sm text-gray-600">White daisy cluster with pearl beads</p>
+                    <div className="pt-2">
+                      <span className="text-2xl font-bold text-pink-600">₹230/-</span>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Product 9 */}
+                <Card className="group overflow-hidden border-pink-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <div className="relative overflow-hidden bg-gray-50 aspect-square">
+                    <img src="/products/product_img_p3_4.jpeg" alt="Sunflower Clutch Clip" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  </div>
+                  <CardContent className="p-6 space-y-3">
+                    <h4 className="text-xl font-semibold text-gray-900">Sunflower Clutch Clip</h4>
+                    <p className="text-sm text-gray-600">Yellow sunflower crochet clip</p>
+                    <div className="pt-2">
+                      <span className="text-2xl font-bold text-pink-600">₹190/-</span>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Product 10 */}
+                <Card className="group overflow-hidden border-pink-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <div className="relative overflow-hidden bg-gray-50 aspect-square">
+                    <img src="/products/product_img_p4_2.jpeg" alt="Cookie Keychain" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  </div>
+                  <CardContent className="p-6 space-y-3">
+                    <h4 className="text-xl font-semibold text-gray-900">Cookie Keychain</h4>
+                    <p className="text-sm text-gray-600">Round textured cookie-style keychain</p>
+                    <div className="pt-2">
+                      <span className="text-2xl font-bold text-pink-600">₹150/-</span>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Product 11 */}
+                <Card className="group overflow-hidden border-pink-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <div className="relative overflow-hidden bg-gray-50 aspect-square">
+                    <img src="/products/product_img_p4_3.jpeg" alt="Tulip Keychain" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  </div>
+                  <CardContent className="p-6 space-y-3">
+                    <h4 className="text-xl font-semibold text-gray-900">Tulip Keychain</h4>
+                    <p className="text-sm text-gray-600">Pink tulip flower with green leaves keychain</p>
+                    <div className="pt-2">
+                      <span className="text-2xl font-bold text-pink-600">₹200/-</span>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Product 12 */}
+                <Card className="group overflow-hidden border-pink-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <div className="relative overflow-hidden bg-gray-50 aspect-square">
+                    <img src="/products/product_img_p4_4.jpeg" alt="Daisy Keychain" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  </div>
+                  <CardContent className="p-6 space-y-3">
+                    <h4 className="text-xl font-semibold text-gray-900">Daisy Keychain</h4>
+                    <p className="text-sm text-gray-600">White and yellow daisy keychain</p>
+                    <div className="pt-2">
+                      <span className="text-2xl font-bold text-pink-600">₹150/-</span>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Product 13 */}
+                <Card className="group overflow-hidden border-pink-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <div className="relative overflow-hidden bg-gray-50 aspect-square">
+                    <img src="/products/product_img_p5_2.jpeg" alt="Floral Airpods Pouch" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  </div>
+                  <CardContent className="p-6 space-y-3">
+                    <h4 className="text-xl font-semibold text-gray-900">Floral Airpods Pouch</h4>
+                    <p className="text-sm text-gray-600">Floral charm pouch - multiple colors available</p>
+                    <div className="pt-2">
+                      <span className="text-2xl font-bold text-pink-600">₹220/-</span>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Product 14 */}
+                <Card className="group overflow-hidden border-pink-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <div className="relative overflow-hidden bg-gray-50 aspect-square">
+                    <img src="/products/product_img_p5_3.jpeg" alt="Daisy Clutch Clip" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  </div>
+                  <CardContent className="p-6 space-y-3">
+                    <h4 className="text-xl font-semibold text-gray-900">Daisy Clutch Clip</h4>
+                    <p className="text-sm text-gray-600">Red and pink flower cluster clip</p>
+                    <div className="pt-2">
+                      <span className="text-2xl font-bold text-pink-600">₹230/-</span>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Product 15 */}
+                <Card className="group overflow-hidden border-pink-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <div className="relative overflow-hidden bg-gray-50 aspect-square">
+                    <img src="/products/product_img_p6_3.jpeg" alt="Floral Clip" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  </div>
+                  <CardContent className="p-6 space-y-3">
+                    <h4 className="text-xl font-semibold text-gray-900">Floral Clip</h4>
+                    <p className="text-sm text-gray-600">Small white flower with yellow center</p>
+                    <div className="pt-2">
+                      <span className="text-2xl font-bold text-pink-600">₹95/-</span>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Product 16 */}
+                <Card className="group overflow-hidden border-pink-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <div className="relative overflow-hidden bg-gray-50 aspect-square">
+                    <img src="/products/product_img_p6_2.png" alt="Cute Angry Clip" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  </div>
+                  <CardContent className="p-6 space-y-3">
+                    <h4 className="text-xl font-semibold text-gray-900">Cute Angry Clip</h4>
+                    <p className="text-sm text-gray-600">Red star-shaped clip</p>
+                    <div className="pt-2">
+                      <span className="text-2xl font-bold text-pink-600">₹155/-</span>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Product 17 */}
+                <Card className="group overflow-hidden border-pink-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <div className="relative overflow-hidden bg-gray-50 aspect-square">
+                    <img src="/products/product_img_p6_4.jpeg" alt="Forever Gajra" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  </div>
+                  <CardContent className="p-6 space-y-3">
+                    <h4 className="text-xl font-semibold text-gray-900">Forever Gajra</h4>
+                    <p className="text-sm text-gray-600">Traditional white flower gajra garland</p>
+                    <div className="pt-2">
+                      <span className="text-2xl font-bold text-pink-600">₹380/-</span>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Product 18 */}
+                <Card className="group overflow-hidden border-pink-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <div className="relative overflow-hidden bg-gray-50 aspect-square">
+                    <img src="/products/product_img_p7_2.jpeg" alt="Enchanted Lavender Whispers" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  </div>
+                  <CardContent className="p-6 space-y-3">
+                    <h4 className="text-xl font-semibold text-gray-900">Enchanted Lavender Whispers</h4>
+                    <p className="text-sm text-gray-600">Lavender and purple flower bouquet</p>
+                    <div className="pt-2">
+                      <span className="text-2xl font-bold text-pink-600">₹699/-</span>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Product 19 */}
+                <Card className="group overflow-hidden border-pink-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <div className="relative overflow-hidden bg-gray-50 aspect-square">
+                    <img src="/products/product_img_p7_3.jpeg" alt="Loop Love Bag" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  </div>
+                  <CardContent className="p-6 space-y-3">
+                    <h4 className="text-xl font-semibold text-gray-900">Loop Love Bag</h4>
+                    <p className="text-sm text-gray-600">Pink crochet handbag with heart pattern</p>
+                    <div className="pt-2">
+                      <span className="text-2xl font-bold text-pink-600">₹699/-</span>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Product 20 */}
+                <Card className="group overflow-hidden border-pink-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <div className="relative overflow-hidden bg-gray-50 aspect-square">
+                    <img src="/products/product_img_p7_4.jpeg" alt="Skyview Blossom" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  </div>
+                  <CardContent className="p-6 space-y-3">
+                    <h4 className="text-xl font-semibold text-gray-900">Skyview Blossom</h4>
+                    <p className="text-sm text-gray-600">Pink flower in brown pot - decorative</p>
+                    <div className="pt-2">
+                      <span className="text-2xl font-bold text-pink-600">₹499/-</span>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </TabsContent>
+
+            {/* Other category tabs will show filtered products - keeping structure simple */}
+            <TabsContent value="claw-clips" className="mt-8">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {/* Claw clips only - Products 1, 2, 3, 5, 6 */}
+                <p className="text-gray-600 col-span-full text-center">Click "All" to see products. Category filtering simplified for visual editing.</p>
+              </div>
+            </TabsContent>
+
+            <TabsContent value="hair-clips" className="mt-8">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <p className="text-gray-600 col-span-full text-center">Click "All" to see products. Category filtering simplified for visual editing.</p>
+              </div>
+            </TabsContent>
+
+            <TabsContent value="keychains" className="mt-8">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <p className="text-gray-600 col-span-full text-center">Click "All" to see products. Category filtering simplified for visual editing.</p>
+              </div>
+            </TabsContent>
+
+            <TabsContent value="accessories" className="mt-8">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <p className="text-gray-600 col-span-full text-center">Click "All" to see products. Category filtering simplified for visual editing.</p>
               </div>
             </TabsContent>
           </Tabs>
@@ -175,12 +457,12 @@ const Home = () => {
               and exclusive designs. Join our growing community!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-              <Button
-                size="lg"
+              <Button 
+                size="lg" 
                 variant="secondary"
                 className="bg-white text-pink-600 hover:bg-pink-50 font-semibold"
-                onClick={() => window.open('https://instagram.com/shah.knits', '_blank')}>
-
+                onClick={() => window.open('https://instagram.com/shah.knits', '_blank')}
+              >
                 <Instagram className="w-5 h-5 mr-2" />
                 @shah.knits
               </Button>
@@ -191,29 +473,29 @@ const Home = () => {
                 <CarouselContent>
                   <CarouselItem className="md:basis-1/3">
                     <div className="p-2">
-                      <img
+                      <img 
                         src="https://images.unsplash.com/photo-1728393287642-13bee7126ae8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTJ8MHwxfHNlYXJjaHwxfHxwYXN0ZWwlMjBjcm9jaGV0fGVufDB8fHx8MTc3NjM2NTk5OXww&ixlib=rb-4.1.0&q=85"
                         alt="Crochet work"
-                        className="rounded-lg shadow-lg w-full aspect-square object-cover" />
-
+                        className="rounded-lg shadow-lg w-full aspect-square object-cover"
+                      />
                     </div>
                   </CarouselItem>
                   <CarouselItem className="md:basis-1/3">
                     <div className="p-2">
-                      <img
+                      <img 
                         src="https://images.unsplash.com/photo-1649680579917-4cc253d7761b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHwxfHx5YXJuJTIwYmFsbHMlMjBwYXN0ZWx8ZW58MHx8fHwxNzc2MzY2MDA1fDA&ixlib=rb-4.1.0&q=85"
                         alt="Pastel yarns"
-                        className="rounded-lg shadow-lg w-full aspect-square object-cover" />
-
+                        className="rounded-lg shadow-lg w-full aspect-square object-cover"
+                      />
                     </div>
                   </CarouselItem>
                   <CarouselItem className="md:basis-1/3">
                     <div className="p-2">
-                      <img
+                      <img 
                         src="https://images.unsplash.com/photo-1649680603092-b0edd0e5e2f3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHw0fHx5YXJuJTIwYmFsbHMlMjBwYXN0ZWx8ZW58MHx8fHwxNzc2MzY2MDA1fDA&ixlib=rb-4.1.0&q=85"
                         alt="Colorful yarns"
-                        className="rounded-lg shadow-lg w-full aspect-square object-cover" />
-
+                        className="rounded-lg shadow-lg w-full aspect-square object-cover"
+                      />
                     </div>
                   </CarouselItem>
                 </CarouselContent>
@@ -241,10 +523,10 @@ const Home = () => {
                   </div>
                   <h4 className="text-xl font-semibold text-gray-900">Instagram</h4>
                   <p className="text-gray-600">DM us for orders and inquiries</p>
-                  <Button
+                  <Button 
                     className="bg-pink-500 hover:bg-pink-600 text-white w-full"
-                    onClick={() => window.open('https://instagram.com/shah.knits', '_blank')}>
-
+                    onClick={() => window.open('https://instagram.com/shah.knits', '_blank')}
+                  >
                     Message Us
                   </Button>
                 </CardContent>
@@ -256,10 +538,10 @@ const Home = () => {
                   </div>
                   <h4 className="text-xl font-semibold text-gray-900">Phone</h4>
                   <p className="text-gray-600">Call us for quick inquiries</p>
-                  <Button
+                  <Button 
                     className="bg-pink-500 hover:bg-pink-600 text-white w-full"
-                    onClick={() => window.location.href = 'tel:9160188322'}>
-
+                    onClick={() => window.location.href = 'tel:9160188322'}
+                  >
                     9160188322
                   </Button>
                 </CardContent>
@@ -283,18 +565,18 @@ const Home = () => {
               <h5 className="font-semibold mb-4">Quick Links</h5>
               <ul className="space-y-2 text-gray-400">
                 <li>
-                  <button
+                  <button 
                     onClick={() => document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })}
-                    className="hover:text-pink-400 transition-colors cursor-pointer">
-
+                    className="hover:text-pink-400 transition-colors cursor-pointer"
+                  >
                     Products
                   </button>
                 </li>
                 <li>
-                  <button
+                  <button 
                     onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                    className="hover:text-pink-400 transition-colors cursor-pointer">
-
+                    className="hover:text-pink-400 transition-colors cursor-pointer"
+                  >
                     Contact
                   </button>
                 </li>
@@ -303,12 +585,12 @@ const Home = () => {
             <div>
               <h5 className="font-semibold mb-4">Connect</h5>
               <div className="flex gap-4">
-                <Button
-                  variant="outline"
+                <Button 
+                  variant="outline" 
                   size="icon"
                   className="border-gray-700 hover:bg-pink-500 hover:border-pink-500"
-                  onClick={() => window.open('https://instagram.com/shah.knits', '_blank')}>
-
+                  onClick={() => window.open('https://instagram.com/shah.knits', '_blank')}
+                >
                   <Instagram className="w-5 h-5" />
                 </Button>
               </div>
@@ -319,8 +601,8 @@ const Home = () => {
           </div>
         </div>
       </footer>
-    </div>);
-
+    </div>
+  );
 };
 
 export default Home;
