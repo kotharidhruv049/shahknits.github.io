@@ -380,7 +380,7 @@ const Home = () => {
                   </div>
                   <CardContent className="p-6 space-y-3">
                     <h4 className="text-xl font-semibold text-gray-900">Loop Love Bag</h4>
-                    <p className="text-sm text-gray-600">Lavender and purple flower bouquet</p>
+                    <p className="text-sm text-gray-600">Pink cute bag with hearts</p>
                     <div className="pt-2">
                       <span className="text-2xl font-bold text-pink-600">₹699/-</span>
                     </div>
@@ -393,7 +393,7 @@ const Home = () => {
                     <img src="/products/product_img_p7_3.jpeg" alt="Loop Love Bag" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   </div>
                   <CardContent className="p-6 space-y-3">
-                    <h4 className="text-xl font-semibold text-gray-900">Loop Love Bag</h4>
+                    <h4 className="text-xl font-semibold text-gray-900">Skyview Blossom</h4>
                     <p className="text-sm text-gray-600">Pink flower in brown pot - decorative</p>
                     <div className="pt-2">
                       <span className="text-2xl font-bold text-pink-600">₹499/-</span>
