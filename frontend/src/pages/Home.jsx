@@ -239,7 +239,7 @@ const Home = () => {
                     <img src="/products/product_img_p3_3.jpeg" alt="Daisy Pinteresty Clip" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   </div>
                   <CardContent className="p-6 space-y-3">
-                    <h4 className="text-xl font-semibold text-gray-900">Daisy Pinteresty Clip</h4>
+                    <h4 className="text-xl font-semibold text-gray-900">Sunflower Clutch Clip</h4>
                     <p className="text-sm text-gray-600">Yellow sunflower crochet clip</p>
                     <div className="pt-2">
                       <span className="text-2xl font-bold text-pink-600">₹190/-</span>
@@ -284,7 +284,7 @@ const Home = () => {
                     <h4 className="text-xl font-semibold text-gray-900">Tulip Keychain</h4>
                     <p className="text-sm text-gray-600">Round textured cookie-style keychain</p>
                     <div className="pt-2">
-                      <span className="text-2xl font-bold text-pink-600">₹200/-</span>
+                      <span className="text-2xl font-bold text-pink-600">₹150/-</span>
                     </div>
                   </CardContent>
                 </Card>
@@ -337,7 +337,7 @@ const Home = () => {
                     <img src="/products/product_img_p6_3.jpeg" alt="Floral Clip" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   </div>
                   <CardContent className="p-6 space-y-3">
-                    <h4 className="text-xl font-semibold text-gray-900">Floral Clip</h4>
+                    <h4 className="text-xl font-semibold text-gray-900">Forever Gajra</h4>
                     <p className="text-sm text-gray-600">Traditional white flower gajra garland</p>
                     <div className="pt-2">
                       <span className="text-2xl font-bold text-pink-600">₹380/-</span>
@@ -365,7 +365,7 @@ const Home = () => {
                     <img src="/products/product_img_p6_4.jpeg" alt="Forever Gajra" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   </div>
                   <CardContent className="p-6 space-y-3">
-                    <h4 className="text-xl font-semibold text-gray-900">Forever Gajra</h4>
+                    <h4 className="text-xl font-semibold text-gray-900">Floral Clip</h4>
                     <p className="text-sm text-gray-600">Small white flower with yellow center</p>
                     <div className="pt-2">
                       <span className="text-2xl font-bold text-pink-600">₹95/-</span>
@@ -379,7 +379,7 @@ const Home = () => {
                     <img src="/products/product_img_p7_2.jpeg" alt="Enchanted Lavender Whispers" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   </div>
                   <CardContent className="p-6 space-y-3">
-                    <h4 className="text-xl font-semibold text-gray-900">Enchanted Lavender Whispers</h4>
+                    <h4 className="text-xl font-semibold text-gray-900">Loop Love Bag</h4>
                     <p className="text-sm text-gray-600">Lavender and purple flower bouquet</p>
                     <div className="pt-2">
                       <span className="text-2xl font-bold text-pink-600">₹699/-</span>
@@ -408,7 +408,7 @@ const Home = () => {
                   </div>
                   <CardContent className="p-6 space-y-3">
                     <h4 className="text-xl font-semibold text-gray-900">Enchanted Lavender Whispers</h4>
-                    <p className="text-sm text-gray-600">Pink flower in brown pot - decorative</p>
+                    <p className="text-sm text-gray-600">Lavender and purple flower bouquet</p>
                     <div className="pt-2">
                       <span className="text-2xl font-bold text-pink-600">₹699/-</span>
                     </div>
