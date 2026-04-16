@@ -414,6 +414,62 @@ const Home = () => {
                     </div>
                   </CardContent>
                 </Card>
+
+                {/* Product 21 - NEW */}
+                <Card className="group overflow-hidden border-pink-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <div className="relative overflow-hidden bg-gray-50 aspect-square">
+                    <img src="/products/evil_eye_220.jpeg" alt="Evil-Eye Keychain" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  </div>
+                  <CardContent className="p-6 space-y-3">
+                    <h4 className="text-xl font-semibold text-gray-900">Evil-Eye Keychain</h4>
+                    <p className="text-sm text-gray-600">Cute little guard against negativity - Blue evil eye</p>
+                    <div className="pt-2">
+                      <span className="text-2xl font-bold text-pink-600">₹220/-</span>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Product 22 - NEW */}
+                <Card className="group overflow-hidden border-pink-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <div className="relative overflow-hidden bg-gray-50 aspect-square">
+                    <img src="/products/spiderman_keychain.jpeg" alt="Spider-Man Keychain" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  </div>
+                  <CardContent className="p-6 space-y-3">
+                    <h4 className="text-xl font-semibold text-gray-900">Spider-Man Keychain</h4>
+                    <p className="text-sm text-gray-600">Crochet Spider-Man character keychain</p>
+                    <div className="pt-2">
+                      <span className="text-2xl font-bold text-pink-600">₹350/-</span>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Product 23 - NEW */}
+                <Card className="group overflow-hidden border-pink-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <div className="relative overflow-hidden bg-gray-50 aspect-square">
+                    <img src="/products/purple_meadow_bouquet.jpeg" alt="Purple Meadow Bouquet" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  </div>
+                  <CardContent className="p-6 space-y-3">
+                    <h4 className="text-xl font-semibold text-gray-900">Purple Meadow Bouquet</h4>
+                    <p className="text-sm text-gray-600">Beautiful purple lavender and daisy flower bouquet</p>
+                    <div className="pt-2">
+                      <span className="text-2xl font-bold text-pink-600">₹850/-</span>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Product 24 - NEW */}
+                <Card className="group overflow-hidden border-pink-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <div className="relative overflow-hidden bg-gray-50 aspect-square">
+                    <img src="/products/evil_eye_250.jpeg" alt="Evil-Eye Keychain" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  </div>
+                  <CardContent className="p-6 space-y-3">
+                    <h4 className="text-xl font-semibold text-gray-900">Evil-Eye Keychain</h4>
+                    <p className="text-sm text-gray-600">Protective evil eye charm keychain</p>
+                    <div className="pt-2">
+                      <span className="text-2xl font-bold text-pink-600">₹250/-</span>
+                    </div>
+                  </CardContent>
+                </Card>
               </div>
             </TabsContent>
 
