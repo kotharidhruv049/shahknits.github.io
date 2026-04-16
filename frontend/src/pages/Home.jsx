@@ -113,7 +113,7 @@ const Home = () => {
 
           {/* Category Tabs */}
           <Tabs value={selectedCategory} onValueChange={setSelectedCategory} className="w-full">
-            <TabsList className="grid w-full max-w-2xl mx-auto grid-cols-4 mb-12 bg-pink-100/50">
+            <TabsList className="grid w-full max-w-3xl mx-auto grid-cols-5 mb-12 bg-pink-100/50">
               <TabsTrigger value="all" className="data-[state=active]:bg-pink-500 data-[state=active]:text-white">
                 All
               </TabsTrigger>

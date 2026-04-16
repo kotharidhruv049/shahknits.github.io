@@ -24,19 +24,20 @@ Build a simple landing page for crochet business "shah.knits" with:
 ### Frontend (Completed - Dec 2025)
 - ✅ Hero section with pastel yarn balls image and brand messaging
 - ✅ Sticky navigation header with Instagram follow button
-- ✅ Product catalog with 14 handcrafted items organized in 3 categories:
-  - Hair Clips (6 items: Floral Clip ₹95, Cute Angry Clip ₹155, Tulip Clutch Clip ₹190, Daisy Pinteresty Clip ₹230, Sunflower Clutch Clip ₹190, Cherry Bow Clip ₹175)
-  - Claw Clips (5 items: Daisy ₹145, Cocoa ₹195, Rosy Charm ₹125, Sunflower ₹145, Beige ₹155)
-  - Accessories (3 items: Floral Airpods Pouch ₹220, Daisy Clutch Clip ₹230, Forever Gajra ₹380)
-- ✅ Category tabs with filtering functionality
-- ✅ Product cards showing name, description, and price (NO order buttons as per user request)
+- ✅ **UPDATED: Product catalog with 20 handcrafted items from PDF** organized in 4 categories:
+  - **Hair Clips (7 items)**: Floral Clip ₹95, Cute Angry Clip ₹155, Cherry Bow Clip ₹175, Tulip Clutch Clip ₹190, Sunflower Clutch Clip ₹190, Daisy Pinteresty Clip ₹230, Daisy Clutch Clip ₹230
+  - **Claw Clips (6 items)**: Rosy Charm ₹125, Daisy ₹145, Sunflower ₹145, Beige ₹155, Cocoa ₹195
+  - **Keychains (3 items - NEW)**: Cookie Keychain ₹150, Daisy Keychain ₹150, Tulip Keychain ₹200
+  - **Accessories (4 items)**: Floral Airpods Pouch ₹220, Forever Gajra ₹380, Skyview Blossom ₹499, Loop Love Bag ₹699, Enchanted Lavender Whispers ₹699
+- ✅ Category tabs with filtering functionality (5 tabs: All + 4 categories)
+- ✅ Product cards showing name, description, and price (NO order buttons per user request)
+- ✅ **Individual product images using high-quality crochet photos** (instead of catalog sheets)
 - ✅ Instagram CTA section with pink gradient background and image carousel
 - ✅ Contact section with Instagram DM and Phone call options
 - ✅ Footer with brand information and social links
 - ✅ Responsive design with mobile optimization
 - ✅ Soft pastel color palette implementation
 - ✅ Custom fonts (Playfair Display + Inter)
-- ✅ Images mapped from uploaded product catalog sheets (5 catalog images containing 14 products)
 
 ### Design Features Implemented
 - Handmade & artisanal aesthetic with serif headings
