@@ -1,4 +1,4 @@
-// Product data for shah.knits - 20 products from PDF with extracted images
+// Product data for shah.knits - CORRECTED mapping from PDF
 
 export const productCategories = [
   {
@@ -24,7 +24,7 @@ export const productCategories = [
 ];
 
 export const products = [
-  // Page 1 - Claw Clips
+  // Page 1 - Claw Clips (images in order: _2, _3, _4)
   {
     id: 1,
     name: 'Rosy Charm Claw Clip',
@@ -50,7 +50,7 @@ export const products = [
     description: 'Textured woven beige crochet clip'
   },
   
-  // Page 2 - Hair Clips
+  // Page 2 - Hair Clips (images in order: _1, _2, _3)
   {
     id: 4,
     name: 'Cherry Bow Clip',
@@ -65,7 +65,7 @@ export const products = [
     price: 145,
     category: 'claw-clips',
     image: '/products/product_img_p2_2.jpeg',
-    description: 'Pale purple daisy crochet clip'
+    description: 'White and purple daisy crochet clip'
   },
   {
     id: 6,
@@ -76,7 +76,7 @@ export const products = [
     description: 'Brown textured flower crochet clip'
   },
   
-  // Page 3 - Hair Clips
+  // Page 3 - Hair Clips (images in order: _2, _3, _4)
   {
     id: 7,
     name: 'Tulip Clutch Clip',
@@ -91,7 +91,7 @@ export const products = [
     price: 230,
     category: 'hair-clips',
     image: '/products/product_img_p3_3.jpeg',
-    description: 'White daisy cluster with yellow centers'
+    description: 'White daisy cluster with pearl beads'
   },
   {
     id: 9,
@@ -102,7 +102,7 @@ export const products = [
     description: 'Yellow sunflower crochet clip'
   },
   
-  // Page 4 - Keychains
+  // Page 4 - Keychains (images in order: _2, _3, _4)
   {
     id: 10,
     name: 'Cookie Keychain',
@@ -117,7 +117,7 @@ export const products = [
     price: 200,
     category: 'keychains',
     image: '/products/product_img_p4_3.jpeg',
-    description: 'Red tulip with tassel keychain'
+    description: 'Pink tulip flower with green leaves keychain'
   },
   {
     id: 12,
@@ -128,32 +128,32 @@ export const products = [
     description: 'White and yellow daisy keychain'
   },
   
-  // Page 5 - Accessories
+  // Page 5 - Accessories (images: _2 for airpods, _3 and _4 for daisy clips)
   {
     id: 13,
     name: 'Floral Airpods Pouch',
     price: 220,
     category: 'accessories',
     image: '/products/product_img_p5_2.jpeg',
-    description: 'Floral charm pouch - multiple colors'
+    description: 'Floral charm pouch - multiple colors available'
   },
   {
     id: 14,
     name: 'Daisy Clutch Clip',
     price: 230,
     category: 'hair-clips',
-    image: '/products/product_img_p5_6.jpeg',
-    description: 'Pink and red flower cluster clip'
+    image: '/products/product_img_p5_3.jpeg',
+    description: 'Red and pink flower cluster clip'
   },
   
-  // Page 6 - Hair Accessories
+  // Page 6 - Hair Accessories (images: _3 for floral, _2 for angry, _4 for gajra)
   {
     id: 15,
     name: 'Floral Clip',
     price: 95,
     category: 'hair-clips',
     image: '/products/product_img_p6_3.jpeg',
-    description: 'Delicate white flower with yellow center'
+    description: 'Small white flower with yellow center'
   },
   {
     id: 16,
@@ -161,7 +161,7 @@ export const products = [
     price: 155,
     category: 'hair-clips',
     image: '/products/product_img_p6_2.png',
-    description: 'Small red star-shaped clip'
+    description: 'Red star-shaped clip'
   },
   {
     id: 17,
@@ -169,10 +169,10 @@ export const products = [
     price: 380,
     category: 'accessories',
     image: '/products/product_img_p6_4.jpeg',
-    description: 'Traditional white flower gajra'
+    description: 'Traditional white flower gajra garland'
   },
   
-  // Page 7 - Special Items
+  // Page 7 - Special Items (images: _2, _3, _4)
   {
     id: 18,
     name: 'Enchanted Lavender Whispers',
@@ -187,7 +187,7 @@ export const products = [
     price: 699,
     category: 'accessories',
     image: '/products/product_img_p7_3.jpeg',
-    description: 'Pink crochet handbag with flower motifs'
+    description: 'Pink crochet handbag with heart pattern'
   },
   {
     id: 20,
@@ -195,7 +195,7 @@ export const products = [
     price: 499,
     category: 'accessories',
     image: '/products/product_img_p7_4.jpeg',
-    description: 'Pink flower in woven pot - decorative'
+    description: 'Pink flower in brown pot - decorative'
   }
 ];
 
